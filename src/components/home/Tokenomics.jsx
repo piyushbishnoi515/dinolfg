@@ -14,6 +14,9 @@ import tree from '../../assets/image/webp/tree.png'
 import newlayer from '../../assets/image/webp/newlayer.png'
 import treegrass from '../../assets/image/webp/treegrass.png'
 import small from '../../assets/image/webp/small.png'
+import grassgroup from '../../assets/image/webp/grassgroup.png'
+import see from '../../assets/image/webp/see.png'
+import tree2 from '../../assets/image/webp/tree2.png'
 
 const Tokenomics = () => {
     return (
@@ -32,6 +35,7 @@ const Tokenomics = () => {
                         <img src={orange} alt="" className='lg:w-[22%] w-[19%]  absolute top-[315%] left-1/2 -translate-x-1/2 max-xl:hidden block' />
                         <img src={pink} alt="" className='lg:w-[22%] w-[19%]  absolute top-[212%] right-[17.5%] max-xl:hidden block' />
                         <img src={green} alt="" className='lg:w-[22%] w-[19%]   absolute top-[12%] right-[7%] max-xl:hidden block' />
+
                     </div>
                     <div className='pb-[]'>
                         <div>
@@ -112,7 +116,10 @@ const Tokenomics = () => {
             <img src={aligater} alt="" className=' absolute z-20 bottom-0 animate-bounce' />
             <img src={layer} alt="" className=' absolute bottom-0 w-full' />
             <img src={treegrass} alt="" className=' absolute right-0 bottom-0 max-sm:hidden' />
-            <img src={small} alt=""  className=' absolute bottom-0 left-[54%] '/>
+            <img src={small} alt="" className=' absolute bottom-[3%] left-[55%] ' />
+            <img src={grassgroup} alt="" className=' absolute left-[22%] bottom-8' />
+            <img src={see} alt="" className=' bottom-[-15%] left-0 absolute' />
+            <img src={tree2} alt="" className=' absolute left-[34%] bottom-[10%] '/>
         </div>
 
     )
