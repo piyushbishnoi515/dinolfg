@@ -20,7 +20,7 @@ import tree2 from '../../assets/image/webp/tree2.png'
 
 const Tokenomics = () => {
     return (
-        <div className=' relative bg-green pb-24 py-5 overflow-hidden min-h-[915px]'>
+        <div className=' relative bg-green pb-24 py-5 overflow-hidden min-h-[1000px]'>
             <img src={newlayer} alt="" className=' absolute right-0' />
             <div className=' container relative z-30 py-5 my-5'>
                 <PrimaryHeading text="Tokenomics" />
