@@ -1,6 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.after\:left-\[5\.5\%\]::after{
+.after\:left-\[5\.5\%\]::after {
     left: 4.2%;
+}
+
+@media (max-width:640px) {
+    .dog {
+        animation: alternate 10s dog infinite;
+    }
+
+    @keyframes dog {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        25% {
+            transform: translate(150px, 250px);
+        }
+
+        50% {
+            transform: translate(-250px, 360px);
+        }
+
+        75% {
+            transform: translate(250px, 500px);
+        }
+    }
+
 }

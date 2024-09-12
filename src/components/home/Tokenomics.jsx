@@ -1,6 +1,6 @@
 import React from 'react'
 import PrimaryHeading from '../common/PrimaryHeading'
-import layer from '../../assets/image/webp/bottom-layer.png'
+import layer from '../../assets/image/webp/bottomnew.png'
 import dog from '../../assets/image/webp/dog.png'
 import colors from '../../assets/image/webp/colors.png'
 import yellow from '../../assets/image/webp/yellow.png'
@@ -11,22 +11,22 @@ import green from '../../assets/image/webp/green.png'
 import Icon from '../common/Icons'
 import aligater from '../../assets/image/webp/aligater.png'
 import tree from '../../assets/image/webp/tree.png'
-import newlayer from '../../assets/image/webp/newlayer.png'
 import treegrass from '../../assets/image/webp/treegrass.png'
 import small from '../../assets/image/webp/small.png'
 import grassgroup from '../../assets/image/webp/grassgroup.png'
 import see from '../../assets/image/webp/see.png'
 import tree2 from '../../assets/image/webp/tree2.png'
+import top from '../../assets/image/webp/top.png'
 
 const Tokenomics = () => {
     return (
-        <div className=' relative bg-green pb-24 py-5 overflow-hidden min-h-[1000px]'>
-            <img src={newlayer} alt="" className=' absolute right-0' />
-            <div className=' container relative z-30 py-5 my-5'>
-                <PrimaryHeading text="Tokenomics" />
+        <div className=' relative bg-green pb-24 py-5 overflow-hidden min-h-[1200px]'>
+            <img src={top} alt=""  className=' w-full absolute top-0'/>
+            <div className=' container relative z-30 py-5 my-5 pt-[150px] '>
+                <PrimaryHeading text="Tokenomics" className='max-sm:pb-[35px]'/>
                 <div className="">
                     <div className=" flex justify-center relative">
-                        <img src={dog} alt="" className='xl:mt-[80px] ' />
+                        <img src={dog} alt="" className='xl:mt-[80px] max-sm:absolute dog  ' />
                         <img src={colors} alt="" className='w-[250px]  h-[126px] absolute top-[64%] ' />
                     </div>
                     <div className=' relative h-[40px] w-full max-w-[450px] lg:max-w-[589px] mx-auto -mt-[80px] '>
@@ -113,13 +113,13 @@ const Tokenomics = () => {
                 </div>
             </div>
             <img src={tree} alt="" className=' absolute z-10 bottom-0 max-sm:hidden' />
-            <img src={aligater} alt="" className=' absolute z-20 bottom-0 animate-bounce' />
+            <img src={aligater} alt="" className=' absolute z-20 bottom-0 animate-bounce max-sm:hidden' />
             <img src={layer} alt="" className=' absolute bottom-0 w-full' />
             <img src={treegrass} alt="" className=' absolute right-0 bottom-0 max-sm:hidden' />
-            <img src={small} alt="" className=' absolute bottom-[3%] left-[55%] ' />
+            <img src={small} alt="" className=' absolute bottom-[3%] left-[55%] max-sm:hidden' />
             <img src={grassgroup} alt="" className=' absolute left-[22%] bottom-8' />
-            <img src={see} alt="" className=' bottom-[-15%] left-0 absolute' />
-            <img src={tree2} alt="" className=' absolute left-[34%] bottom-[10%] '/>
+            <img src={see} alt="" className=' bottom-[-15%] left-0 absolute ' />
+            <img src={tree2} alt="" className=' absolute left-[34%] bottom-[4%] max-md:hidden'/>
         </div>
 
     )

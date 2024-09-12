@@ -1,105 +1,37 @@
 import React from 'react'
-import Roadimg from '../../assets/image/webp/RoadMapimg.webp'
-const RoadMap = () => {
+import { ROADMAP_DATA } from '../../utils/Helper'
+import greenLine from '../../assets/image/webp/roadline.png'
+
+const Roadmap = () => {
     return (
-        <div className=' py-10 -mt-9 relative'>
-            <div
-                className=" bg-[#09655A] relative z-[1] -mt-[5px]  overflow-hidden"
-            >
-                <img
-                    src={Roadimg}
-                    alt="roadimg"
-                    className=" mx-auto absolute max-sm:hidden top-[10%] right-[0%] z-[-1] left-0  h-[89%] pt-[60px]"
-                />
-                <div class="sm:hidden block absolute sm:left-[70px] left-[40px] bottom-0 top-[11%] h-[85%] w-[15px] border-l-[11px] border-dotted border-[#0a4740]"></div>
-                <div className=" max-w-[1164px] px-3 mx-auto pb-[35px] sm:pb-[60px]">
-                    <h2
-                        className=" text-[39px] sm:text-[64px] text-white text-center font-chewy leading-[43px] sm:leading-[83px] pt-10"
-                    >
+        <div className='relative bg-[#09655A] py-5 xl:py-16 overflow-hidden -mt-16'>
+            <div className="container md:pb-24 md:mb-10 ]">
+                <div className='flex justify-center'>
+                    <h1 className=' font-chewy font-normal text-[64px] text-white leading-[83px] text-center max-w-[273px]'>
                         Roadmap
-                    </h2>
-                    <div
-                        className=" max-sm:after:absolute max-sm:relative  after:bg-[#10100f]  max-sm:after:border-2 after:border-white  after:w-[30px] after:h-[30px] after:rounded-full after:left-[5.5%] after:top-[10%] max-w-[463px] lg:max-w-[767px] sm:mt-[97px] mt-[50px]"
-                    >
-                        <div className="max-sm:flex-col flex sm:items-center max-sm:ml-[90px] gap-[45px]">
-                            <h3 className=" text-[#FBA11D] text-[100px] lg:text-[200px] font-chewy leading-[100px] lg:leading-[261px]">
-                                01
-                            </h3>
-                            <ul>
-                                <li className="  list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    Launch $DINO & Website & Social Media.
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    Building the community.
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    Marketing Phase 1.
-                                </li>
-                            </ul>
+                    </h1>
+                </div>
+                <div className="lg:mt-24 mt-10 md:mt-16 relative w-full max-w-[950px] xl:max-w-[992px] gap-10 sm:gap-16 md:gap-0 flex flex-col ">
+                    {ROADMAP_DATA.map((i, index) => (
+                        <div key={index} className={`flex z-[1] flex-col pl-16 sm:pl-24 md:pl-0 lg:gap-11 sm:flex-row md:items-center w-full md:w-fit ${index === 0 ? "gap-7 sm:gap-12" : "gap-2 sm:gap-7"}  ${index === 1 ? "md:ml-auto md:max-w-[550px] lg:max-w-[722px] md:w-full lg:mt-[272px] md:mt-[286px]" : index === 2 ? "xl:mt-[243px] md:mt-[186px]" : index === 3 ? "md:ml-auto md:max-w-[450px] lg:max-w-[622px] md:w-full md:mt-[309px] lg:mt-[271px] xl:mt-[266px] " : ""}`}>
+                            <p className={`${index === 0 ? " text-yellow" : index === 1 ? " text-liteGreen" : index === 2 ? " text-orange" : " text-skyBlue"}  font-chewy relative z-[1]  font-normal mx-auto  sm:mx-0 lg:text-[200px] sm:-mt-5 md:mt-0 text-6xl md:text-7xl lg:leading-custom-2xl drop-shadow-lightGray`}>{i.number}</p>
+                            <div className="flex flex-col gap-1 lg:gap-4">
+                                {i.items.map((e, index) => (
+                                    <div key={index} className="flex items-center">
+                                        <span className='flex w-1 h-1 rounded-full bg-white mx-4'></span>
+                                        <p className='font-normal text-xl text-white leading-6'>{e.heading}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <img src={i.img} alt='#' className={`absolute z-[1] ${index === 0 ? "md:w-[250px] lg:w-[326px] md:h-[160px] lg:h-[199px] -rotate-12 top-[67px] -left-[2%] md:-right-10 w-24 sm:top-10 md:top-[-37px] sm:left-0 md:left-auto max-md:hidden" : index === 1 ? "lg:w-[213px] md:w-[150px] lg:h-[307px] md:left-9 w-24 -left-[4%] sm:left-0 top-[292px]  max-md:hidden" : index === 2 ? "md:w-[250px] md:h-[352px] top-[43%]  -left-[4%] w-24 sm:left-0 md:left-[80%]  max-md:hidden lg-top-[43%] " : "md:w-[175px] md:h-[107px] md:-bottom-36 w-24 bottom-[4%] xl:-bottom-40 -left-[4%] sm:left-0 sm:bottom-14 md:left-[40%]  max-md:hidden"}`} />
                         </div>
-                    </div>
-                    <div className="max-sm:after:absolute max-sm:relative  after:bg-[#c62767]  max-sm:after:border-2 after:border-white  after:w-[30px] after:h-[30px] after:rounded-full after:left-[5.5%] after:top-[10%] max-w-[463px] lg:max-w-[855px] sm:ml-auto sm:mt-[200px] lg:mt-[272px] mt-[50px]"
-                    >
-                        <div className="max-sm:flex-col flex sm:items-center max-sm:ml-[90px] gap-[45px]">
-                            <h3 className=" text-[#8EC627] text-[100px] lg:text-[200px] font-chewy leading-[100px] lg:leading-[261px]">
-                                02
-                            </h3>
-                            <ul>
-                                <li className=" list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    CoinGecko & Coinmarketcap listing.
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    Introduction to Buyback & Burning mechanism
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    Marketing Phase 2.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="max-sm:after:absolute max-sm:relative  after:bg-[#d007d4]  max-sm:after:border-2 after:border-white  after:w-[30px] after:h-[30px] after:rounded-full after:left-[5.5%] after:top-[10%] max-w-[463px] lg:max-w-[767px]  sm:mt-[128px] mt-[50px]"
-                    >
-                        <div className="max-sm:flex-col flex sm:items-center max-sm:ml-[90px] gap-[45px]">
-                            <h3 className=" text-[#D45B07] text-[100px] lg:text-[200px] font-chewy leading-[100px] lg:leading-[261px]">
-                                03
-                            </h3>
-                            <ul>
-                                <li className="  list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    Utility and Usecase Introduction.
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    CEX Listings
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal  text-white font-balsamiq">
-                                    Marketing Phase 3.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div
-                        className="max-sm:after:absolute max-sm:relative  after:bg-[#23AAAC]  max-sm:after:border-2 after:border-white  after:w-[30px] after:h-[30px] after:rounded-full after:left-[5.5%] after:top-[10%] max-w-[463px] lg:max-w-[767px] sm:ml-auto sm:pt-[187px] sm:pb-[100px] mt-[50px]"
-                    >
-                        <div className="max-sm:flex-col flex sm:items-center max-sm:ml-[90px] gap-[45px]">
-                            <h3 className=" text-[#23AAAC] text-[100px] lg:text-[200px] font-chewy leading-[100px] lg:leading-[261px]">
-                                04
-                            </h3>
-                            <ul>
-                                <li className="  list-disc text-[20px] leading-[24px] font-normal font-balsamiq text-white">
-                                    Staking Introduction.
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal font-balsamiq  text-white">
-                                    DINO NFT Collection.
-                                </li>
-                                <li className=" pt-4 list-disc text-[20px] leading-[24px] font-normal  font-balsamiq text-white">
-                                    Marketing Phase 4
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    ))}
+                    <img src={greenLine} alt='green-line' className='absolute top-[20px] hidden md:flex -right-[125px]' />
                 </div>
             </div>
         </div>
+
     )
 }
 
-export default RoadMap
+export default Roadmap
