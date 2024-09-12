@@ -1,7 +1,7 @@
-import plan from '../assets/image/webp/plane.png'
-import roadmapTree from '../assets/image/webp/roadtree.png'
-import roadmapCartoon from '../assets/image/webp/roaddog.png'
-import greenGrass from '../assets/image/webp/roadlastimg.png'
+import plan from '../assets/image/webp/plane.webp'
+import roadmapTree from '../assets/image/webp/roadtree.webp'
+import roadmapCartoon from '../assets/image/webp/roaddog.webp'
+import greenGrass from '../assets/image/webp/roadlastimg.webp'
 
 
 export const ROADMAP_DATA = [

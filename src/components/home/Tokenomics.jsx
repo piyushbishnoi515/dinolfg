@@ -1,40 +1,40 @@
 import React from 'react'
 import PrimaryHeading from '../common/PrimaryHeading'
-import layer from '../../assets/image/webp/bottomnew.png'
-import dog from '../../assets/image/webp/dog.png'
-import colors from '../../assets/image/webp/colors.png'
-import yellow from '../../assets/image/webp/yellow.png'
-import skyblue from '../../assets/image/webp/skyblue.png'
-import orange from '../../assets/image/webp/orange.png'
-import pink from '../../assets/image/webp/pink.png'
-import green from '../../assets/image/webp/green.png'
+import layer from '../../assets/image/webp/bottomnew.webp'
+import dog from '../../assets/image/webp/dog.webp'
+import colors from '../../assets/image/webp/colors.webp'
+import yellow from '../../assets/image/webp/yellow.webp'
+import skyblue from '../../assets/image/webp/skyblue.webp'
+import orange from '../../assets/image/webp/orange.webp'
+import pink from '../../assets/image/webp/pink.webp'
+import green from '../../assets/image/webp/green.webp'
 import Icon from '../common/Icons'
-import aligater from '../../assets/image/webp/aligater.png'
-import tree from '../../assets/image/webp/tree.png'
-import treegrass from '../../assets/image/webp/treegrass.png'
-import small from '../../assets/image/webp/small.png'
-import grassgroup from '../../assets/image/webp/grassgroup.png'
-import see from '../../assets/image/webp/see.png'
-import tree2 from '../../assets/image/webp/tree2.png'
-import top from '../../assets/image/webp/top.png'
+import aligater from '../../assets/image/webp/aligater.webp'
+import tree from '../../assets/image/webp/tree.webp'
+import treegrass from '../../assets/image/webp/treegrass.webp'
+import small from '../../assets/image/webp/small.webp'
+import grassgroup from '../../assets/image/webp/grassgroup.webp'
+import see from '../../assets/image/webp/see.webp'
+import tree2 from '../../assets/image/webp/tree2.webp'
+import top from '../../assets/image/webp/top.webp'
 
 const Tokenomics = () => {
     return (
         <div className=' relative bg-green pb-24 py-5 overflow-hidden min-h-[1200px]'>
-            <img src={top} alt=""  className=' w-full absolute top-0'/>
+            <img src={top} alt="" className=' w-full absolute top-0 pointer-events-none' />
             <div className=' container relative z-30 py-5 my-5 pt-[150px] '>
-                <PrimaryHeading text="Tokenomics" className='max-sm:pb-[35px]'/>
+                <PrimaryHeading text="Tokenomics" className='max-sm:pb-[35px]' />
                 <div className="">
                     <div className=" flex justify-center relative">
-                        <img src={dog} alt="" className='xl:mt-[80px] max-sm:absolute dog  ' />
-                        <img src={colors} alt="" className='w-[250px]  h-[126px] absolute top-[64%] ' />
+                        <img src={dog} alt="" className='xl:mt-[80px] max-sm:absolute dog  pointer-events-none ' />
+                        <img src={colors} alt="" className='w-[250px]  h-[126px] absolute top-[64%]  pointer-events-none' />
                     </div>
                     <div className=' relative h-[40px] w-full max-w-[450px] lg:max-w-[589px] mx-auto -mt-[80px] '>
-                        <img src={yellow} alt="" className='lg:w-[22%] w-[19%]  absolute top-[-8%] left-[7%] max-xl:hidden block' />
-                        <img src={skyblue} alt="" className='lg:w-[22%] w-[19%]  absolute top-[204%] left-[17%] max-xl:hidden block' />
-                        <img src={orange} alt="" className='lg:w-[22%] w-[19%]  absolute top-[315%] left-1/2 -translate-x-1/2 max-xl:hidden block' />
-                        <img src={pink} alt="" className='lg:w-[22%] w-[19%]  absolute top-[212%] right-[17.5%] max-xl:hidden block' />
-                        <img src={green} alt="" className='lg:w-[22%] w-[19%]   absolute top-[12%] right-[7%] max-xl:hidden block' />
+                        <img src={yellow} alt="" className='lg:w-[22%] w-[19%]  absolute top-[-8%] left-[7%] max-xl:hidden block pointer-events-none' />
+                        <img src={skyblue} alt="" className='lg:w-[22%] w-[19%]  absolute top-[204%] left-[17%] max-xl:hidden block pointer-events-none' />
+                        <img src={orange} alt="" className='lg:w-[22%] w-[19%]  absolute top-[315%] left-1/2 -translate-x-1/2 max-xl:hidden block pointer-events-none' />
+                        <img src={pink} alt="" className='lg:w-[22%] w-[19%]  absolute top-[212%] right-[17.5%] max-xl:hidden block pointer-events-none' />
+                        <img src={green} alt="" className='lg:w-[22%] w-[19%]   absolute top-[12%] right-[7%] max-xl:hidden block pointer-events-none' />
 
                     </div>
                     <div className='pb-[]'>
@@ -53,7 +53,7 @@ const Tokenomics = () => {
                                 </div>
                                 <Icon IconName='line2' className='max-xl:hidden' />
                             </div>
-                            <div className=' absolute top-[155%] left-[46%]  gap-6 max-xl:hidden'>
+                            <div className=' absolute top-[146%] left-[46%]  gap-6 max-xl:hidden'>
                                 <Icon IconName='line3' className='max-xl:hidden justify-center' />
 
                                 <div className="flex flex-col items-end">
@@ -112,14 +112,14 @@ const Tokenomics = () => {
                     </div>
                 </div>
             </div>
-            <img src={tree} alt="" className=' absolute z-10 bottom-0 max-sm:hidden' />
-            <img src={aligater} alt="" className=' absolute z-20 bottom-0 animate-bounce max-sm:hidden' />
-            <img src={layer} alt="" className=' absolute bottom-0 w-full' />
-            <img src={treegrass} alt="" className=' absolute right-0 bottom-0 max-sm:hidden' />
-            <img src={small} alt="" className=' absolute bottom-[3%] left-[55%] max-sm:hidden' />
-            <img src={grassgroup} alt="" className=' absolute left-[22%] bottom-8' />
-            <img src={see} alt="" className=' bottom-[-15%] left-0 absolute ' />
-            <img src={tree2} alt="" className=' absolute left-[34%] bottom-[4%] max-md:hidden'/>
+            <img src={tree} alt="" className=' absolute z-10 bottom-0 max-sm:hidden pointer-events-none' />
+            <img src={aligater} alt="" className=' absolute z-20 bottom-0 animate-bounce max-sm:hidden pointer-events-none' />
+            <img src={layer} alt="" className=' absolute bottom-0 w-full pointer-events-none' />
+            <img src={treegrass} alt="" className=' absolute right-0 bottom-0 max-sm:hidden pointer-events-none' />
+            <img src={small} alt="" className=' absolute bottom-[3%] left-[55%] max-sm:hidden pointer-events-none' />
+            <img src={grassgroup} alt="" className=' absolute left-[22%] bottom-8 pointer-events-none' />
+            <img src={see} alt="" className=' bottom-[-15%] left-0 absolute pointer-events-none ' />
+            <img src={tree2} alt="" className=' absolute left-[34%] bottom-[4%] max-md:hidden pointer-events-none' />
         </div>
 
     )

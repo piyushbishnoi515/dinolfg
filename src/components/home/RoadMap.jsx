@@ -1,6 +1,6 @@
 import React from 'react'
 import { ROADMAP_DATA } from '../../utils/Helper'
-import greenLine from '../../assets/image/webp/roadline.png'
+import greenLine from '../../assets/image/webp/roadline.webp'
 
 const Roadmap = () => {
     return (

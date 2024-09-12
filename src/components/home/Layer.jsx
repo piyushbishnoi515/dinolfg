@@ -1,5 +1,5 @@
 import React from 'react'
-import layer from '../../assets/image/webp/roadlayer1.png'
+import layer from '../../assets/image/webp/roadlayer1.webp'
 
 const Layer = () => {
     return (
